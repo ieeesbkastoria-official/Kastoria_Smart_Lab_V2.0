@@ -17,7 +17,7 @@ extern "C" {
 // Orismos pin
 #define door_sensor 19
 #define Gas_analog 32
-// Metablites Thermokrasias, Ugrasias(DHT) KAI Gas sensor(digital-analog)
+// Metablites Gas sensor(analog), Katastasi_Portas
 int doorState;
 int gasAnalog;
 
