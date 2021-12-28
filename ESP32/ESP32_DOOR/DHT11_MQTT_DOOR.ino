@@ -26,7 +26,7 @@ extern "C" {
 // Initialize DHT sensor
 DHT dht(DHTPIN, DHTTYPE);
 
-// Metablites Thermokrasias, Ugrasias(DHT) KAI Gas sensor(digital-analog)
+// Metablites Thermokrasias, Ugrasias(DHT), Katastasi_Portas(doorState)
 float temp;
 float hum;
 int doorState;
@@ -37,7 +37,7 @@ AsyncMqttClient mqttClient;
 TimerHandle_t mqttReconnectTimer;
 TimerHandle_t wifiReconnectTimer;
 
-unsigned long previousMillis = 0;   // Apothikeusi teleutaiou Publish gia thermokrasia
+unsigned long previousMillis = 0;   // Apothikeusi teleutaiou Publish
 const long interval = 1500 ;        // Ruthmos ananeosis timwn
 
 void connectToWifi() {
